@@ -104,8 +104,8 @@ FTP is inherently insecure, especially when you are using password-based authent
 
 5. Add the following lines to your **/var/www/example.com/wp-config.php** file:
 
-       define('FTP_PUBKEY','/home/wp-user/id_rsa.pub');
-       define('FTP_PRIVKEY','/home/wp-user/id_rsa');
+       define('FTP_PUBKEY','/home/wp-user/.ssh/id_rsa.pub');
+       define('FTP_PRIVKEY','/home/wp-user/.ssh/id_rsa');
        define('FTP_USER','wp-user');
        define('FTP_PASS','');
        define('FTP_HOST','127.0.0.1:22');
